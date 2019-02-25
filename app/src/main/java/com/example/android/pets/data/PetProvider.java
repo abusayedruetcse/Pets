@@ -49,7 +49,7 @@ public class PetProvider extends ContentProvider {
         switch (match)
         {
             case PETS:
-                cursor=database.query(PetContract.PetEntry.TABLE_NAME,projection,null,null,null,null,sortOrder);
+                cursor=database.query(PetContract.PetEntry.TABLE_NAME,projection,selection,selectionArgs,null,null,sortOrder);
 
                 break;
 
